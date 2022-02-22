@@ -1,0 +1,363 @@
+@charset "utf-8";
+
+.wrapper {
+    padding: 0 7.9%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+/* SPヘッダー非表示 */
+.header_sp{
+    display: none;
+}
+/* ヘッダー */
+.header_pc {
+    margin-bottom: 5.15vw;
+}
+.flex{
+    margin-top: 1.8vw;
+    display: flex;
+    justify-content: space-between;
+}
+.title a{
+    transition: opacity ease-out 0.5s;
+}
+.title a:hover{
+    transition: all 0.5s;
+    opacity: 0.7;
+}
+/* SNS */
+.sns_link ul{
+    display: flex;
+    margin-top: 15px;
+}
+.sns_link a{
+    transition: opacity ease-out 0.5s;
+}
+.sns_link a:hover{
+    transition: all 0.5s;
+    opacity: 0.7;
+}
+.sns_link .instagram{
+    margin: 0 25px;
+}
+/* ナビゲーション */
+.navigation ul{
+    display: flex;
+    margin-top: 25px;
+}
+.navigation a{
+    font-size: 16px;
+    color: #000;
+    transition: opacity ease-out 0.5s;
+}
+.navigation a:hover{
+    transition: all 0.5s;
+    opacity: 0.6;
+    text-decoration: underline;
+}
+.navigation .news{
+    margin: 0 50px;
+}
+/* メインイメージ */
+.GAS img {
+    width: 100%;
+    margin-top: -1.85vw;
+}
+/* キャッチコピー */
+.catchcopy{
+    text-align: center;
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 8.8vw 0 11vw 0;
+    letter-spacing: 0.2ch;
+}
+.catchcopy h2{
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 30px;
+}
+.catchcopy p{
+    line-height: 2.6;
+    font-size: 18px;
+}
+/* コンテンツID */
+.content_id{
+    display: flex;
+    align-items: center;
+    font-size: 2.5vw;
+    margin-bottom: 10px;
+}
+
+.content_id p{
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.75vw;
+    margin: 1.1vw 0 0 0.5vw;
+}
+
+/* メインコンテンツ */
+.content {
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.record {
+    width: 30.43%;
+    margin-bottom: 70px;
+}
+.record img {
+    width: 100%;
+    border: 1px solid;
+}
+.record h2 {
+    font-size: 1.173vw;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.record p {
+    font-weight: 300;
+    font-size: 0.9vw;
+    margin: 0;
+}
+.record a {
+    display: block;
+    color: #000;
+}
+
+.record a:hover img {
+    transition: all 0.5s;
+    opacity: 0.7;
+}
+.record a img {
+    transition: opacity ease-out 0.5s;
+}
+
+/* 商品詳細ページ */
+/* 商品イメージ */
+.Details {
+    display: flex;
+    justify-content: space-between;
+}
+.Details img {
+    width: 50%;
+}
+.Details .column {
+    display: flex;
+    flex-direction: column;
+}
+.Details .title ,.artist ,.price ,.add ,.spotify-pc ,.spotify-sp{
+    display: inline-flex;
+    justify-content: end;
+
+}
+.Details .title p {
+    font-size: 2.15vw;
+    font-weight: 600;
+}
+
+.Details .artist p {
+    font-size: 0.85vw;
+    font-weight: 300;
+}
+.Details .price p {
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.spotify-sp {
+    display: none;
+}
+.Details .title{
+    order:-5;
+}
+.Details .artist{
+    order: -4;
+}
+.Details .spotify-pc{
+    order: -3;
+    margin-top: 1.84vw;
+}
+
+.Details .price{
+    margin-top: 6vw;
+    order: -2;
+}
+.Details .btn-add {
+    margin-top: 5px;
+    order: -1;
+}
+/* テキスト */
+.record-text {
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 3.7vw;
+}
+
+.record-text .text {
+    letter-spacing: 0.4ch;
+    line-height: 200%;
+    width: 50%;
+    order: -2;
+}
+
+.record-text .tracklist {
+    letter-spacing: 0.2ch;
+    line-height: 150%;
+    order: -1;
+}
+@media (max-width: 1200px) {
+   /* 横幅が1200px以下の場合に適用するスタイル */
+    .Details .title p {
+    font-size: 3.5vw;
+    }
+    .Details .artist p {
+        font-size: 1.5vw;
+    }
+    .Details .price p {
+        font-size: 1.8vw;
+    }
+    .Details .price{
+    margin-top: 27.5vw;
+    order: -2;
+    }
+    .Details .btn-add {
+        margin-top: 5px;
+        order: -1;
+    }
+    .Details .spotify-pc{
+    display: none;
+    }   
+}
+
+
+
+
+/* ボタン */
+.btn{
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 1.2vw;
+}
+.btn p{
+    padding: 1vw;
+}
+
+/* 全商品ボタン */
+a.btn-allitem {
+    transition: all 0.3s;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 0;
+    color: #000;
+    display: inline-block;
+    width: 11vw;
+    height: 3.6vw;
+    padding: 1vw 0;
+}
+
+a.btn-allitem:hover {
+    transition: all 0.3s;
+    color: #fff;
+    background: #000;
+}
+
+/* 次へボタン */
+a.btn-next {
+    transition: all 0.3s;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 0;
+    color: #000;
+    display: inline-block;
+    width: 7.35vw;
+    height: 3.6vw;
+    padding: 1vw 0;
+}
+
+a.btn-next:hover {
+    transition: all 0.3s;
+    color: #fff;
+    background: #000;
+}
+
+/* カテゴリーボタン */
+.category {
+    justify-content: space-between;
+}
+
+a.btn-category {
+    font-weight: 500;
+    transition: all 0.3s;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 0;
+    color: #000;
+    background: #eee;
+    display: inline-block;
+    width: 16.7vw;
+    height: 5.5vw;
+    padding: 2vw 0;
+}
+
+a.btn-category:hover {
+    transition: all 0.3s;
+    color: #fff;
+    background: #333;
+}
+/* カート追加ボタン */
+.add{
+    justify-content: end;
+}
+a.btn-add {
+    transition: all 0.3s;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 0;
+    color: #fff;
+    background: #000;
+    display: inline-block;
+    width: 14.7vw;
+    height: 3.6vw;
+    padding: 1vw 0;
+}
+
+a.btn-add:hover {
+    transition: all 0.3s;
+    color: #000;
+    background: #fff;
+}
+/* 戻るボタン */
+a.btn-back {
+    margin-top: 11vw;
+    transition: all 0.3s;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 0;
+    color: #000;
+    display: inline-block;
+    width: 7.35vw;
+    height: 3.6vw;
+    padding: 1vw 0;
+}
+
+a.btn-back:hover {
+    transition: all 0.3s;
+    color: #fff;
+    background: #000;
+}
+/* フッダー */
+footer{
+    padding: 50px;
+    text-align: center;
+    font-weight: 300;
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- font -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "cqq3bgp",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/sanitize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="../css/style-sp.css"
+      media="only screen and (max-width:769px)"
+    />
+    <title>GAS | Yellow Magic Orchestra</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- header pc -->
+      <header class="header_pc">
+        <div class="flex">
+          <div class="title">
+            <a href="index.html">
+              <h1><img src="../images/logo.svg" alt="GAS" width="178" /></h1>
+            </a>
+          </div>
+          <nav class="sns_link">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="../images/spotify.svg" alt="spotify"
+                /></a>
+              </li>
+              <li class="instagram">
+                <a href="#"
+                  ><img src="../images/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../images/twitter.svg" alt="twitter"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="allitems.html">All Items</a></li>
+            <li class="news"><a href="#">News</a></li>
+            <li><a href="#">Map</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- header sp -->
+      <header class="header_sp">
+        <div class="title">
+          <a href="index.html">
+            <h1><img src="../images/logo.svg" alt="GAS" /></h1>
+          </a>
+        </div>
+
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="drawer">
+          <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+          <input type="checkbox" id="drawer-check" class="drawer-hidden" />
+
+          <!-- ハンバーガーアイコン -->
+          <label for="drawer-check" class="drawer-open"><span></span></label>
+
+          <!-- メニュー -->
+          <nav class="drawer-content">
+            <nav class="sns_link-sp">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img src="../images/spotify.svg" alt="spotify"
+                  /></a>
+                </li>
+                <li class="instagram">
+                  <a href="#"
+                    ><img src="../images/instagram.svg" alt="instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="../images/twitter.svg" alt="twitter"
+                  /></a>
+                </li>
+              </ul>
+            </nav>
+            <!-- content id -->
+            <div class="content_id">
+              <h2>Category</h2>
+              <p>カテゴリー</p>
+            </div>
+            <!-- category -->
+            <div class="btn category-sp">
+              <a href="allitems.html" class="btn-category">ROCK</a>
+              <a href="allitems.html" class="btn-category">JAZZ</a>
+              <a href="allitems.html" class="btn-category">SOUL</a>
+              <a href="allitems.html" class="btn-category">LO-FI</a>
+              <a href="allitems.html" class="btn-category">和モノ</a>
+            </div>
+            <div class="navigation-sp">
+              <ul>
+                <li><a href="allitems.html">All Items</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Map</a></li>
+              </ul>
+            </div>
+            <div class="menu-img">
+              <a href="index.html">
+                <h1><img src="../images/logo.svg" alt="GAS" /></h1>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- main -->
+      <div class="main">
+        <!-- content -->
+        <div class="Details">
+          <img src="../images/YellowMagic.jpg" alt="YellowMagic" />
+          <div class="column">
+            <div class="title">
+              <p>Yellow Magic Orchestra</p>
+            </div>
+            <div class="artist">
+              <p>YELLOW MAGIC ORCHESTRA</p>
+            </div>
+            <div class="price">
+              <p>¥2,533</p>
+            </div>
+            <div class="btn add">
+              <a href="#" class="btn-add">Add To Cart</a>
+            </div>
+            <div class="spotify-pc">
+              <iframe
+                src="https://open.spotify.com/embed/album/3qqELRjHOjEkjOiYTJNb2V"
+                width="100%"
+                height="300"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </div>
+            <div class="spotify-sp">
+              <iframe
+                src="https://open.spotify.com/embed/album/3qqELRjHOjEkjOiYTJNb2V"
+                width="100%"
+                height="80"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="record-text">
+          <div class="tracklist">
+            <p>
+              1.コンピューター・ゲーム　－サーカスのテーマ－<br />
+              2.ファイアークラッカー<br />
+              3.シムーン<br />
+              4.コズミック・サーフィン<br />
+              5.コンピューター・ゲーム　－インベーダーのテーマ－<br />
+              6.イエロー・マジック（東風）<br />
+              7.中国女<br />
+              8.ブリッジ・オーバー・トラブルド・ミュージック<br />
+              9.マッド・ピエロ
+            </p>
+          </div>
+          <div class="text">
+            <p>
+              『クラフトワークが脱帽し、ディーボが絶賛したイエロー・マジック・オーケストラ。全世界発売盤新装登場!
+              』YMOは78年12月に行われた「フュージョン・フェスティバル」に出演し、
+              それを観たA&Mプロデューサー、トミー・リピューマは海外発売を即決、
+              翌年LAにてこのアルバムのリミックスが行われた。
+              前掲のアルバム・ラスト「アクロバット」がカットされ、「東風」には吉田美奈子の
+              ヴォーカル・ダビング、その他エコー処理等米国市場向け(?)とされる加工が
+              施されている。ジャケットは、頭からコードが生えたサングラス芸者に変更。
+              アメリカではシングル「ファイヤークラッカー」と同時に79年5月リリース、
+              イギリスでは6月のリリース(シングルは「東風」)。復刻盤は坂本龍一、高橋幸宏の最新「YMO振り返りインタビュー」、そして細野晴臣東芝盤(1999年)インタビュー復刻掲載。1999年細野リマスタリング音源使用。
+            </p>
+          </div>
+        </div>
+
+        <div class="btn">
+          <a href="allitems.html" class="btn-back">Back</a>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer>
+        <small>&copy;GAS All Rights Reserved.</small>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- font -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "cqq3bgp",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/sanitize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="../css/style-sp.css"
+      media="only screen and (max-width:769px)"
+    />
+    <title>GAS | Spiritual state</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- header pc -->
+      <header class="header_pc">
+        <div class="flex">
+          <div class="title">
+            <a href="index.html">
+              <h1><img src="../images/logo.svg" alt="GAS" width="178" /></h1>
+            </a>
+          </div>
+          <nav class="sns_link">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="../images/spotify.svg" alt="spotify"
+                /></a>
+              </li>
+              <li class="instagram">
+                <a href="#"
+                  ><img src="../images/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../images/twitter.svg" alt="twitter"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="allitems.html">All Items</a></li>
+            <li class="news"><a href="#">News</a></li>
+            <li><a href="#">Map</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- header sp -->
+      <header class="header_sp">
+        <div class="title">
+          <a href="index.html">
+            <h1><img src="../images/logo.svg" alt="GAS" /></h1>
+          </a>
+        </div>
+
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="drawer">
+          <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+          <input type="checkbox" id="drawer-check" class="drawer-hidden" />
+
+          <!-- ハンバーガーアイコン -->
+          <label for="drawer-check" class="drawer-open"><span></span></label>
+
+          <!-- メニュー -->
+          <nav class="drawer-content">
+            <nav class="sns_link-sp">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img src="../images/spotify.svg" alt="spotify"
+                  /></a>
+                </li>
+                <li class="instagram">
+                  <a href="#"
+                    ><img src="../images/instagram.svg" alt="instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="../images/twitter.svg" alt="twitter"
+                  /></a>
+                </li>
+              </ul>
+            </nav>
+            <!-- content id -->
+            <div class="content_id">
+              <h2>Category</h2>
+              <p>カテゴリー</p>
+            </div>
+            <!-- category -->
+            <div class="btn category-sp">
+              <a href="allitems.html" class="btn-category">ROCK</a>
+              <a href="allitems.html" class="btn-category">JAZZ</a>
+              <a href="allitems.html" class="btn-category">SOUL</a>
+              <a href="allitems.html" class="btn-category">LO-FI</a>
+              <a href="allitems.html" class="btn-category">和モノ</a>
+            </div>
+            <div class="navigation-sp">
+              <ul>
+                <li><a href="allitems.html">All Items</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Map</a></li>
+              </ul>
+            </div>
+            <div class="menu-img">
+              <a href="index.html">
+                <h1><img src="../images/logo.svg" alt="GAS" /></h1>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- main -->
+      <div class="main">
+        <!-- content -->
+        <div class="Details">
+          <img src="../images/spiritualstate.jpg" alt="Spiritual state" />
+          <div class="column">
+            <div class="title">
+              <p>Spiritual state</p>
+            </div>
+            <div class="artist">
+              <p>Nujabes</p>
+            </div>
+            <div class="price">
+              <p>¥2,640</p>
+            </div>
+            <div class="btn add">
+              <a href="#" class="btn-add">Add To Cart</a>
+            </div>
+            <div class="spotify-pc">
+              <iframe
+                src="https://open.spotify.com/embed/album/724juUMeWRW82bDoyH91Vd"
+                width="100%"
+                height="300"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </div>
+            <div class="spotify-sp">
+              <iframe
+                src="https://open.spotify.com/embed/album/724juUMeWRW82bDoyH91Vd"
+                width="100%"
+                height="80"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="record-text">
+          <div class="tracklist">
+            <p>
+              1.spiritual state featuring Uyama Hiroto<br />
+              2.Sky is Tumbling featuring Cise Star<br />
+              3.Gone Are The Day featuring Uyama Hiroto<br />
+              4.spirale<br />
+              5.City Light featuring Substantial & Pase Rock<br />
+              6.Color of Autumn<br />
+              7.Down on the Side<br />
+              8.Yes featuring Pase Rock<br />
+              9.Rainy Way Back Home<br />
+              10.far fowls<br />
+              11.fellows<br />
+              12.Waiting for the clouds<br />
+              13.prayer<br />
+              14.Island featuring Uyama Hiroto & haruka nakamura
+            </p>
+          </div>
+          <div class="text">
+            <p>
+              Nujabes最後のアルバムとなる3rdアルバム「Spiritual State」
+              nujabesが目指した遥か地平線の先、それは人と人とのスピリット(魂)が
+              激しく共鳴し合いその眩い光が無限に広がる奇跡の光景が広がっている。
+              完成されることのなかったこのアルバムは、そのピース一つ一つが繋ぎ合わされ、それぞれの心象の中で完成を迎える...。
+              「metaphorical music」「modal soul」と過去2
+              枚のアルバムをリリースし、現代の音楽業界の流れと別に、宣伝活動を行わず
+              に純粋に音=作品のリリースを続ける稀有のレーベル「hydeout
+              productions」主宰でもあるnujabes の6 年ぶりの3rd アルバム
+              にしてラストアルバムである。
+            </p>
+          </div>
+        </div>
+
+        <div class="btn">
+          <a href="allitems.html" class="btn-back">Back</a>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer>
+        <small>&copy;GAS All Rights Reserved.</small>
+      </footer>
+    </div>
+  </body>
+</html>

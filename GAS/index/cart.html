@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- font -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "cqq3bgp",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/sanitize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="../css/style-sp.css"
+      media="only screen and (max-width:769px)"
+    />
+    <title>GAS | Luv(sic) Hexalogy</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- header pc -->
+      <header class="header_pc">
+        <div class="flex">
+          <div class="title">
+            <a href="index.html">
+              <h1><img src="../images/logo.svg" alt="GAS" width="178" /></h1>
+            </a>
+          </div>
+          <nav class="sns_link">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="../images/spotify.svg" alt="spotify"
+                /></a>
+              </li>
+              <li class="instagram">
+                <a href="#"
+                  ><img src="../images/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../images/twitter.svg" alt="twitter"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="allitems.html">All Items</a></li>
+            <li class="news"><a href="#">News</a></li>
+            <li><a href="#">Map</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- main -->
+      <div class="main">
+        <!-- content -->
+        <div class=""></div>
+
+        <div class="btn">
+          <a href="allitems.html" class="btn-back">Continue </a>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer>
+        <small>&copy;GAS All Rights Reserved.</small>
+      </footer>
+    </div>
+  </body>
+</html>

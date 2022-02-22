@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- font -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "cqq3bgp",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/sanitize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="../css/style-sp.css"
+      media="only screen and (max-width:769px)"
+    />
+    <title>GAS | seeds</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- header pc -->
+      <header class="header_pc">
+        <div class="flex">
+          <div class="title">
+            <a href="index.html">
+              <h1><img src="../images/logo.svg" alt="GAS" width="178" /></h1>
+            </a>
+          </div>
+          <nav class="sns_link">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="../images/spotify.svg" alt="spotify"
+                /></a>
+              </li>
+              <li class="instagram">
+                <a href="#"
+                  ><img src="../images/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../images/twitter.svg" alt="twitter"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="allitems.html">All Items</a></li>
+            <li class="news"><a href="#">News</a></li>
+            <li><a href="#">Map</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- header sp -->
+      <header class="header_sp">
+        <div class="title">
+          <a href="index.html">
+            <h1><img src="../images/logo.svg" alt="GAS" /></h1>
+          </a>
+        </div>
+
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="drawer">
+          <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+          <input type="checkbox" id="drawer-check" class="drawer-hidden" />
+
+          <!-- ハンバーガーアイコン -->
+          <label for="drawer-check" class="drawer-open"><span></span></label>
+
+          <!-- メニュー -->
+          <nav class="drawer-content">
+            <nav class="sns_link-sp">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img src="../images/spotify.svg" alt="spotify"
+                  /></a>
+                </li>
+                <li class="instagram">
+                  <a href="#"
+                    ><img src="../images/instagram.svg" alt="instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="../images/twitter.svg" alt="twitter"
+                  /></a>
+                </li>
+              </ul>
+            </nav>
+            <!-- content id -->
+            <div class="content_id">
+              <h2>Category</h2>
+              <p>カテゴリー</p>
+            </div>
+            <!-- category -->
+            <div class="btn category-sp">
+              <a href="allitems.html" class="btn-category">ROCK</a>
+              <a href="allitems.html" class="btn-category">JAZZ</a>
+              <a href="allitems.html" class="btn-category">SOUL</a>
+              <a href="allitems.html" class="btn-category">LO-FI</a>
+              <a href="allitems.html" class="btn-category">和モノ</a>
+            </div>
+            <div class="navigation-sp">
+              <ul>
+                <li><a href="allitems.html">All Items</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Map</a></li>
+              </ul>
+            </div>
+            <div class="menu-img">
+              <a href="index.html">
+                <h1><img src="../images/logo.svg" alt="GAS" /></h1>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- main -->
+      <div class="main">
+        <!-- content -->
+        <div class="Details">
+          <img src="../images/epseeds.jpg" alt="seeds" />
+          <div class="column">
+            <div class="title">
+              <p>seeds</p>
+            </div>
+            <div class="artist">
+              <p>eevee</p>
+            </div>
+            <div class="price">
+              <p>¥4,400</p>
+            </div>
+            <div class="btn add">
+              <a href="#" class="btn-add">Add To Cart</a>
+            </div>
+            <div class="spotify-pc">
+              <iframe
+                src="https://open.spotify.com/embed/album/03rTwruRPImbzxnhEmO0wa"
+                width="100%"
+                height="300"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </div>
+            <div class="spotify-sp">
+              <iframe
+                src="https://open.spotify.com/embed/album/03rTwruRPImbzxnhEmO0wa"
+                width="100%"
+                height="80"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="record-text">
+          <div class="tracklist">
+            <p>
+              1.fragments<br />
+              2.m i s t<br />
+              3.like this<br />
+              4.já é verão<br />
+              5.belas<br />
+              6.seems<br />
+              7.lay it down<br />
+              8.lua<br />
+              9.when I met you<br />
+              10.I wonder if we're dead<br />
+              11.admire<br />
+              12.feel<br />
+              13.forget<br />
+            </p>
+          </div>
+          <div class="text">
+            <p>
+              今や世界を代表するチル系ビートテープ・レーベルへと成長したカナダのInner
+              Ocean。レーベルの黎明期からリリースを重ね、チルホップの雛型を作ったオランダの女性ビートメイカーeevee。彼女が2017年にリリースし、瞬く間に完売してしまったカセット作品「seeds」が待望の再発。日本のアニメーションの通過したHip
+              Hop。とてつもなく深い寂寥感に覆われたこの異形のローファイ・ビーツが、実は時代の扉を開けることになる。
+            </p>
+          </div>
+        </div>
+
+        <div class="btn">
+          <a href="allitems.html" class="btn-back">Back</a>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer>
+        <small>&copy;GAS All Rights Reserved.</small>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- font -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "cqq3bgp",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/sanitize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="../css/style-sp.css"
+      media="only screen and (max-width:769px)"
+    />
+    <title>GAS | Ordinar Songs</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- header pc -->
+      <header class="header_pc">
+        <div class="flex">
+          <div class="title">
+            <a href="index.html">
+              <h1><img src="../images/logo.svg" alt="GAS" width="178" /></h1>
+            </a>
+          </div>
+          <nav class="sns_link">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="../images/spotify.svg" alt="spotify"
+                /></a>
+              </li>
+              <li class="instagram">
+                <a href="#"
+                  ><img src="../images/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../images/twitter.svg" alt="twitter"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="allitems.html">All Items</a></li>
+            <li class="news"><a href="#">News</a></li>
+            <li><a href="#">Map</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- header sp -->
+      <header class="header_sp">
+        <div class="title">
+          <a href="index.html">
+            <h1><img src="../images/logo.svg" alt="GAS" /></h1>
+          </a>
+        </div>
+
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="drawer">
+          <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+          <input type="checkbox" id="drawer-check" class="drawer-hidden" />
+
+          <!-- ハンバーガーアイコン -->
+          <label for="drawer-check" class="drawer-open"><span></span></label>
+
+          <!-- メニュー -->
+          <nav class="drawer-content">
+            <nav class="sns_link-sp">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img src="../images/spotify.svg" alt="spotify"
+                  /></a>
+                </li>
+                <li class="instagram">
+                  <a href="#"
+                    ><img src="../images/instagram.svg" alt="instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="../images/twitter.svg" alt="twitter"
+                  /></a>
+                </li>
+              </ul>
+            </nav>
+            <!-- content id -->
+            <div class="content_id">
+              <h2>Category</h2>
+              <p>カテゴリー</p>
+            </div>
+            <!-- category -->
+            <div class="btn category-sp">
+              <a href="allitems.html" class="btn-category">ROCK</a>
+              <a href="allitems.html" class="btn-category">JAZZ</a>
+              <a href="allitems.html" class="btn-category">SOUL</a>
+              <a href="allitems.html" class="btn-category">LO-FI</a>
+              <a href="allitems.html" class="btn-category">和モノ</a>
+            </div>
+            <div class="navigation-sp">
+              <ul>
+                <li><a href="allitems.html">All Items</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Map</a></li>
+              </ul>
+            </div>
+            <div class="menu-img">
+              <a href="index.html">
+                <h1><img src="../images/logo.svg" alt="GAS" /></h1>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- main -->
+      <div class="main">
+        <!-- content -->
+        <div class="Details">
+          <img src="../images/ordinary-songs.jpg" alt="ordinary-songs" />
+          <div class="column">
+            <div class="title">
+              <p>Ordinary Songs</p>
+            </div>
+            <div class="artist">
+              <p>snail's house</p>
+            </div>
+            <div class="price">
+              <p>¥1,980</p>
+            </div>
+            <div class="btn add">
+              <a href="#" class="btn-add">Add To Cart</a>
+            </div>
+            <div class="spotify-pc">
+              <iframe
+                src="https://open.spotify.com/embed/album/7BqWXzCEQkcEvBlNN5X8Cf"
+                width="100%"
+                height="300"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </div>
+            <div class="spotify-sp">
+              <iframe
+                src="https://open.spotify.com/embed/album/7BqWXzCEQkcEvBlNN5X8Cf"
+                width="100%"
+                height="80"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="record-text">
+          <div class="tracklist">
+            <p>
+              1.Thinkin' of U. <br />
+              2.ラ・ム・ネ <br />
+              3.Cocoa <br />
+              4.[Snowlight]
+              <br />
+              5.I'm Curious~&lt;3
+              <br />
+              6.Look at Me~&lt;3 <br />
+              7.La La La... <br />
+              8.&lt;3<br />
+              9.Aid for Your Heart <br />
+              10.It's Gonna Be Alright <br />
+              11.ふかふかおふとん <br />
+            </p>
+          </div>
+          <div class="text">
+            <p>
+              クラブミュージックのような低音が響くようなサウンドではなく、日本のアニメーションカルチャーなんかも感じさせるような、ポップなものが多いです。
+              8bitサウンドなんかを彷彿とさせる楽曲があったり、若いクリエイターさんなのに、どこか懐かしさを感じるものもあって、老若男女みなさんに好かれるような音楽だと思います。
+              懐かしさを感じる曲の中にも、トレンドを感じるようなかわいらしいパートもあったりなんかして、聴いていて飽きません。
+              さらに音楽と一緒に流れるアニメーションのキャラクターになっている女の子がかわいくて、そちらも人気の理由になっているのかもしれません。
+            </p>
+          </div>
+        </div>
+
+        <div class="btn">
+          <a href="allitems.html" class="btn-back">Back</a>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer>
+        <small>&copy;GAS All Rights Reserved.</small>
+      </footer>
+    </div>
+  </body>
+</html>

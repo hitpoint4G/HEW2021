@@ -1,0 +1,299 @@
+@charset "utf-8";
+
+.wrapper {
+    padding: 0 3.2%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+/* PCヘッダー非表示 */
+.header_pc {
+display: none;
+}
+/* SPヘッダー */
+.header_sp {
+    margin-top: 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+.title img {
+    width: 20vw;
+}
+
+/*------------------------------
+
+ここから下がハンバーガーメニュー
+に関するCSS
+
+------------------------------*/
+
+/* チェックボックスは非表示に */
+.drawer-hidden {
+    display: none;
+}
+
+/* ハンバーガーアイコンの設置スペース */
+.drawer-open {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    z-index: 100;/* 重なり順を一番上に */
+    cursor: pointer;
+}
+
+/* ハンバーガーメニューのアイコン */
+.drawer-open span,
+.drawer-open span:before,
+.drawer-open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #333;
+    transition: 0.5s;
+    position: absolute;
+}
+
+/* 三本線のうち一番上の棒の位置調整 */
+.drawer-open span:before {
+    bottom: 8px;
+}
+
+/* 三本線のうち一番下の棒の位置調整 */
+.drawer-open span:after {
+    top: 8px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer-check:checked ~ .drawer-open span {
+    background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer-check:checked ~ .drawer-open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+#drawer-check:checked ~ .drawer-open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+/* メニューのデザイン*/
+.drawer-content {
+    width: 325px;
+    height: 580px;
+    padding: 11px 21px;
+    position: fixed;
+    top: 0;
+    left: -325px;/* メニューを画面の外に飛ばす */
+    z-index: 99;
+    background: #fff;
+    border: 2px solid #000;
+    transition: .5s;
+}
+.drawer-content .sns_link-sp ul{
+    display: flex;
+    justify-content: end;
+}
+.drawer-content .sns_link-sp .instagram {
+    margin: 0 2.5vw;
+}
+.sns_link-sp img {
+    width: 15px;
+}
+.drawer-content .content_id {
+    font-size: 18px;
+}
+.drawer-content .content_id p {
+    font-size: 8px;
+    font-weight: 500;
+    margin: -7px 0 10px 0;
+}
+.drawer-content .btn{
+    display: block;
+    font-size: 14px;
+}
+.drawer-content .btn-category {
+    border: 0px solid;
+    margin-top: 2px;
+    width: 100%;
+    height: 55px;
+    padding: 18px;
+}
+.navigation-sp {
+    margin-top: 20px;
+}
+.navigation-sp a{
+    font-size: 22px;
+    color: #000;
+}
+.menu-img {
+    margin: 0 auto;
+    width: 75px;
+}
+.menu-img img {
+    margin-top: 30px;
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer-check:checked ~ .drawer-content {
+  left: 0;/* メニューを画面に入れる */
+}
+
+/* ナビゲーション */
+.navigation{
+    display: none;
+}
+/* キャッチコピー */
+.catchcopy{
+    display: none;
+}
+/* メインイメージ */
+
+.GAS img {
+    width: 100%;
+    margin-top: 4.2vw;
+}
+/* コンテンツID */
+.content_id{
+    display: block;
+    align-items: center;
+    font-size: 4.5vw;
+    margin: 20px 0 0 0;
+}
+.allitem {
+    margin: 0;
+}
+.content_id p{
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2vw;
+    margin: -1.5vw 0 0 0;
+}
+/* メインコンテンツ */
+.content {
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.record {
+    width: 48.45%;
+    margin-bottom: 30px;
+}
+.record img {
+    width: 100%;
+}
+.record h2 {
+    font-size: 2.7vw;
+    margin: 5px 0 2px 0 ;
+}
+.record p {
+    font-size: 2vw;
+}
+.record a {
+    display: block;
+    color: #000;
+}
+.record a:hover {
+    color: #888;
+}
+.record a:hover img {
+    transition: all 0.5s;
+    opacity: 0.7;
+}
+.record a img {
+    transition: opacity ease-out 0.5s;
+}
+/* 商品詳細ページ */
+/* 商品イメージ */
+.Details {
+    margin-top: 5vw;
+    display: block;
+    justify-content: space-between;
+}
+.Details img {
+    width: 100%;
+}
+.Details .column {
+    display: flex;
+    flex-direction: column;
+}
+.Details .title ,.artist ,.price ,.add ,.spotify-pc ,.spotify-sp{
+    display: inline-flex;
+    justify-content: end;
+
+}
+.Details .title p {
+    margin-top: 3vw;
+    font-size: 6.5vw;
+    font-weight: 600;
+}
+
+.Details .artist p {
+    font-size: 2.5vw;
+    font-weight: 300;
+}
+.Details .price p {
+    font-size: 3.5vw;
+    font-weight: 600;
+}
+.Details .price{
+    margin-top: 5vw;
+}
+.spotify-sp {
+    display: block;
+    margin-top: 5.88vw;
+}
+/* テキスト */
+.record-text {
+    display: block;
+    justify-content: space-between;
+    margin-top: 13.5vw;
+}
+
+.record-text .text {
+    letter-spacing: 0.2ch;
+    line-height: 180%;
+    width: 100%;
+    margin-top: 13.5vw;
+}
+/* ボタン */
+.btn{
+    font-size: 2.3vw;
+}
+a.btn-allitem {
+    width: 16vw;
+    height: 6vw;
+}
+a.btn-next {
+    width: 11.21vw;
+    height: 6vw;
+}
+.category {
+display: none;
+}
+a.btn-add {
+    width: 26.8vw;
+    height: 6.67vw;
+    padding: 1.5vw 0;
+}
+a.btn-back {
+    display: none;
+}
+
+/* フッダー */
+footer{
+    font-size: 2vw;
+    padding: 3vw;
+    text-align: center;
+}

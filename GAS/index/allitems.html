@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- font -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "cqq3bgp",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/sanitize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="../css/style-sp.css"
+      media="only screen and (max-width:769px)"
+    />
+    <title>GAS | 商品一覧</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- header pc -->
+      <header class="header_pc">
+        <div class="flex">
+          <div class="title">
+            <a href="index.html">
+              <h1><img src="../images/logo.svg" alt="GAS" width="178" /></h1>
+            </a>
+          </div>
+          <nav class="sns_link">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="../images/spotify.svg" alt="spotify"
+                /></a>
+              </li>
+              <li class="instagram">
+                <a href="#"
+                  ><img src="../images/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../images/twitter.svg" alt="twitter"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="allitems.html">All Items</a></li>
+            <li class="news"><a href="#">News</a></li>
+            <li><a href="#">Map</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- header sp -->
+      <header class="header_sp">
+        <div class="title">
+          <a href="index.html">
+            <h1><img src="../images/logo.svg" alt="GAS" /></h1>
+          </a>
+        </div>
+
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="drawer">
+          <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+          <input type="checkbox" id="drawer-check" class="drawer-hidden" />
+
+          <!-- ハンバーガーアイコン -->
+          <label for="drawer-check" class="drawer-open"><span></span></label>
+
+          <!-- メニュー -->
+          <nav class="drawer-content">
+            <nav class="sns_link-sp">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img src="../images/spotify.svg" alt="spotify"
+                  /></a>
+                </li>
+                <li class="instagram">
+                  <a href="#"
+                    ><img src="../images/instagram.svg" alt="instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="../images/twitter.svg" alt="twitter"
+                  /></a>
+                </li>
+              </ul>
+            </nav>
+            <!-- content id -->
+            <div class="content_id">
+              <h2>Category</h2>
+              <p>カテゴリー</p>
+            </div>
+            <!-- category -->
+            <div class="btn category-sp">
+              <a href="allitems.html" class="btn-category">ROCK</a>
+              <a href="allitems.html" class="btn-category">JAZZ</a>
+              <a href="allitems.html" class="btn-category">SOUL</a>
+              <a href="allitems.html" class="btn-category">LO-FI</a>
+              <a href="allitems.html" class="btn-category">和モノ</a>
+            </div>
+            <div class="navigation-sp">
+              <ul>
+                <li><a href="allitems.html">All Items</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Map</a></li>
+              </ul>
+            </div>
+            <div class="menu-img">
+              <a href="index.html">
+                <h1><img src="../images/logo.svg" alt="GAS" /></h1>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- main -->
+      <div class="main">
+        <!-- content id -->
+        <div class="content_id">
+          <h2>All Items</h2>
+          <p>商品一覧</p>
+        </div>
+        <!-- content -->
+        <div class="content">
+          <section class="record">
+            <a href="Details01.html">
+              <img
+                src="../images/Luv(sic)Hexalogy.jpg"
+                alt="Luv(sic)Hexalogy"
+              />
+              <h2>Luv(sic) Hexalogy</h2>
+              <p>¥7,580</p>
+            </a>
+          </section>
+
+          <section class="record">
+            <a href="Details02.html">
+              <img src="../images/ModalSoul.jpg" alt="ModalSoul" />
+              <h2>Modal Soul</h2>
+              <p>¥3,450</p>
+            </a>
+          </section>
+
+          <section class="record">
+            <a href="Details03.html">
+              <img src="../images/spiritualstate.jpg" alt="spiritualstate" />
+              <h2>Spiritual State</h2>
+              <p>¥2,640</p>
+            </a>
+          </section>
+
+          <section class="record">
+            <a href="Details04.html">
+              <img src="../images/Delayed.jpg" alt="Delayed" />
+              <h2>Delayed</h2>
+              <p>¥2,980</p>
+            </a>
+          </section>
+
+          <section class="record">
+            <a href="Details05.html">
+              <img src="../images/care.jpg" alt="care" />
+              <h2>Care</h2>
+              <p>¥1,480</p>
+            </a>
+          </section>
+
+          <section class="record">
+            <a href="Details06.html">
+              <img src="../images/Numbers.jpg" alt="Numbers" />
+              <h2>Numbers</h2>
+              <p>¥1,480</p>
+            </a>
+          </section>
+
+          <section class="record">
+            <a href="Details07.html">
+              <img src="../images/Visions.jpg" alt="Visions" />
+              <h2>Visions</h2>
+              <p>¥5,112</p>
+            </a>
+          </section>
+
+          <section class="record">
+            <a href="Details08.html">
+              <img
+                src="../images/YellowMagic.jpg"
+                alt="Yellow Magic Orchestra"
+              />
+              <h2>Yellow Magic Orchestra</h2>
+              <p>¥2,533</p>
+            </a>
+          </section>
+
+          <section class="record">
+            <a href="Details09.html">
+              <img src="../images/DOWNTOWN.jpg" alt="DOWN TOWN" />
+              <h2>DOWN TOWN</h2>
+              <p>¥3,564</p>
+            </a>
+          </section>
+
+          <section class="record">
+            <a href="Details10.html">
+              <img src="../images/epseeds.jpg" alt="ep seeds" />
+              <h2>seeds</h2>
+              <p>¥4,400</p>
+            </a>
+          </section>
+
+          <section class="record">
+            <a href="Details11.html">
+              <img src="../images/suisei.jpg" alt="suisei" />
+              <h2>水星</h2>
+              <p>¥1,980</p>
+            </a>
+          </section>
+
+          <section class="record">
+            <a href="Details12.html">
+              <img src="../images/ordinary-songs.jpg" alt="ordinary-songs" />
+              <h2>Ordinary Songs</h2>
+              <p>¥1,980</p>
+            </a>
+          </section>
+        </div>
+
+        <!-- btn -->
+        <div class="btn">
+          <p>1-12/24</p>
+          <a href="#" class="btn-next">Next</a>
+        </div>
+
+        <!-- content id -->
+        <div class="content_id">
+          <div class="category">
+            <h2>Category</h2>
+          </div>
+        </div>
+        <!-- category -->
+        <div class="btn category">
+          <a href="allitems.html" class="btn-category">ROCK</a>
+          <a href="allitems.html" class="btn-category">JAZZ</a>
+          <a href="allitems.html" class="btn-category">SOUL</a>
+          <a href="allitems.html" class="btn-category">LO-FI</a>
+          <a href="allitems.html" class="btn-category">和モノ</a>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer>
+        <small>&copy;GAS All Rights Reserved.</small>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- font -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "cqq3bgp",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/sanitize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="../css/style-sp.css"
+      media="only screen and (max-width:769px)"
+    />
+    <title>GAS | 水星</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- header pc -->
+      <header class="header_pc">
+        <div class="flex">
+          <div class="title">
+            <a href="index.html">
+              <h1><img src="../images/logo.svg" alt="GAS" width="178" /></h1>
+            </a>
+          </div>
+          <nav class="sns_link">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="../images/spotify.svg" alt="spotify"
+                /></a>
+              </li>
+              <li class="instagram">
+                <a href="#"
+                  ><img src="../images/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../images/twitter.svg" alt="twitter"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="allitems.html">All Items</a></li>
+            <li class="news"><a href="#">News</a></li>
+            <li><a href="#">Map</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- header sp -->
+      <header class="header_sp">
+        <div class="title">
+          <a href="index.html">
+            <h1><img src="../images/logo.svg" alt="GAS" /></h1>
+          </a>
+        </div>
+
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="drawer">
+          <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+          <input type="checkbox" id="drawer-check" class="drawer-hidden" />
+
+          <!-- ハンバーガーアイコン -->
+          <label for="drawer-check" class="drawer-open"><span></span></label>
+
+          <!-- メニュー -->
+          <nav class="drawer-content">
+            <nav class="sns_link-sp">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img src="../images/spotify.svg" alt="spotify"
+                  /></a>
+                </li>
+                <li class="instagram">
+                  <a href="#"
+                    ><img src="../images/instagram.svg" alt="instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="../images/twitter.svg" alt="twitter"
+                  /></a>
+                </li>
+              </ul>
+            </nav>
+            <!-- content id -->
+            <div class="content_id">
+              <h2>Category</h2>
+              <p>カテゴリー</p>
+            </div>
+            <!-- category -->
+            <div class="btn category-sp">
+              <a href="allitems.html" class="btn-category">ROCK</a>
+              <a href="allitems.html" class="btn-category">JAZZ</a>
+              <a href="allitems.html" class="btn-category">SOUL</a>
+              <a href="allitems.html" class="btn-category">LO-FI</a>
+              <a href="allitems.html" class="btn-category">和モノ</a>
+            </div>
+            <div class="navigation-sp">
+              <ul>
+                <li><a href="allitems.html">All Items</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Map</a></li>
+              </ul>
+            </div>
+            <div class="menu-img">
+              <a href="index.html">
+                <h1><img src="../images/logo.svg" alt="GAS" /></h1>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- main -->
+      <div class="main">
+        <!-- content -->
+        <div class="Details">
+          <img src="../images/suisei.jpg" alt="suisei" />
+          <div class="column">
+            <div class="title">
+              <p>水星</p>
+            </div>
+            <div class="artist">
+              <p>tofubeats</p>
+            </div>
+            <div class="price">
+              <p>¥1,980</p>
+            </div>
+            <div class="btn add">
+              <a href="#" class="btn-add">Add To Cart</a>
+            </div>
+            <div class="spotify-pc">
+              <iframe
+                src="https://open.spotify.com/embed/album/0oFBSdoBUJKuLhq3em5h1x"
+                width="100%"
+                height="300"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </div>
+            <div class="spotify-sp">
+              <iframe
+                src="https://open.spotify.com/embed/album/0oFBSdoBUJKuLhq3em5h1x"
+                width="100%"
+                height="80"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="record-text">
+          <div class="tracklist">
+            <p>
+              1.水星 feat.オノマトペ大臣 <br />
+              2.水星(Young & Fresh mix) feat. 仮谷せいら <br />
+              3.水星(thamesbeat remix) feat. オノマトペ大臣 <br />
+              4.水星(BOY MEETS GIRL in Kobecity) feat. オノマトペ大臣&仮谷せいら
+              <br />
+              5.水星(GIRL MEETS BOY in Kobecity) feat.仮谷せいら&オノマトペ大臣
+              <br />
+              6.水星(instrumental) <br />
+              7.水星(acappella) <br />
+            </p>
+          </div>
+          <div class="text">
+            <p>
+              時代の空気感を代弁する曲が各年代ごとに生まれてくるとしたら、2010年代の日本代表には間違いなくこの曲の名前が挙がるはず。様々なリミックスが存在しており、カバーも同様なのですが音源としてリリースされているものは実は少ないです。現代は動画サイトで誰もがカバーを発信できる時代なので、それも含めればこれからも無数のカバーが生まれていく楽曲だと思います。
+              またこの曲を聴いて多くの人が連想するのが『今夜はブギー・バック』だと思います。この楽曲を聴いて感じたことを率直に綴っているので、世間一般の解釈や作者の意図とは食い違ったり、あるいはまったく一致するかもしれませんが、この楽曲やそのカバー、Remixに少しでも興味をもつきっかけになったら幸いです。
+            </p>
+          </div>
+        </div>
+
+        <div class="btn">
+          <a href="allitems.html" class="btn-back">Back</a>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer>
+        <small>&copy;GAS All Rights Reserved.</small>
+      </footer>
+    </div>
+  </body>
+</html>
